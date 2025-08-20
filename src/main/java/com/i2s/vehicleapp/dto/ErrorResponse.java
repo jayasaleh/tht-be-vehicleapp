@@ -1,14 +1,14 @@
 package com.i2s.vehicleapp.dto;
 
-public class ApiResponse<T> {
+public class ErrorResponse<T> {
     private int code;
     private String message;
     private T data;
 
-    public ApiResponse(int code, String message, T data) {
+    public ErrorResponse(int code, String message) {
         this.code = code;
         this.message = message;
-        this.data = data;
+        this.data = null;
     }
 
     // Getter & Setter
